@@ -100,12 +100,12 @@ class ViewController: UIViewController
         
         return _fetchedResultsController!
     }
-    
-    
+   
+    let alluser = GlobalVariables.sharedinstance
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        listener()
+       alluser.allUsers()
         
     }
 
@@ -205,20 +205,5 @@ extension ViewController : UITableViewDelegate, UITableViewDataSource
             try self.managedObjectContext?.save()
         } catch {}
     }
-    
-    
-    
-    func listener () {
-        
-        let db = Firestore.firestore()
-        db.collection("ejemplo").document("ejem").addSnapshotListener {documentSnapshot, error in
-            guard let document = documentSnapshot else {
-                print("Error fetching document: \(error!)")
-                return
-            }
-            print("Current data: \(String(describing: document.data()))")
-        }
-    }
-    
     
 }

@@ -15,6 +15,8 @@
 		232AED0F1E81D59000CAD79C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 232AED0D1E81D59000CAD79C /* LaunchScreen.storyboard */; };
 		BC236A32D2660A4D6F8CE2D6 /* Pods_MyTasks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B522A416D8522552A4A25D5 /* Pods_MyTasks.framework */; };
 		BF178A9221ABA1D1009B44C5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BF178A9121ABA1D1009B44C5 /* GoogleService-Info.plist */; };
+		BF178A9721B27A4B009B44C5 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF178A9621B27A4B009B44C5 /* File.swift */; };
+		BF178A9921B27FAF009B44C5 /* VC2.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF178A9821B27FAF009B44C5 /* VC2.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		B54B97AEDDAD7BD097B28F19 /* Pods-MyTasks.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyTasks.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyTasks/Pods-MyTasks.debug.xcconfig"; sourceTree = "<group>"; };
 		BB6E7BE369688BF379528659 /* Pods-MyTasks.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyTasks.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyTasks/Pods-MyTasks.release.xcconfig"; sourceTree = "<group>"; };
 		BF178A9121ABA1D1009B44C5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		BF178A9621B27A4B009B44C5 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
+		BF178A9821B27FAF009B44C5 /* VC2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VC2.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,8 +70,10 @@
 			isa = PBXGroup;
 			children = (
 				232AED011E81D59000CAD79C /* AppDelegate.swift */,
+				BF178A9621B27A4B009B44C5 /* File.swift */,
 				232AED031E81D59000CAD79C /* ViewController.swift */,
 				232AED051E81D59000CAD79C /* Main.storyboard */,
+				BF178A9821B27FAF009B44C5 /* VC2.swift */,
 				232AED0B1E81D59000CAD79C /* Assets.xcassets */,
 				232AED0D1E81D59000CAD79C /* LaunchScreen.storyboard */,
 				232AED101E81D59000CAD79C /* Info.plist */,
@@ -234,7 +240,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF178A9721B27A4B009B44C5 /* File.swift in Sources */,
 				232AED041E81D59000CAD79C /* ViewController.swift in Sources */,
+				BF178A9921B27FAF009B44C5 /* VC2.swift in Sources */,
 				232AED0A1E81D59000CAD79C /* MyTasks.xcdatamodeld in Sources */,
 				232AED021E81D59000CAD79C /* AppDelegate.swift in Sources */,
 			);

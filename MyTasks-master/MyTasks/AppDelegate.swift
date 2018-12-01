@@ -25,6 +25,23 @@ class AppDelegate: UIResponder, UIApplicationDelegate
         
         FirebaseApp.configure()
         
+        class GlobalVariables {
+            static let sharedinstance = GlobalVariables ()
+            
+            private init () {}
+            
+            func allUsers() {
+                let db = Firestore.firestore()
+                db.collection("ejemplo").document("ejem").addSnapshotListener {documentSnapshot, error in
+                    guard let document = documentSnapshot else {
+                        print("Error fetching document: \(error!)")
+                        return
+                    }
+                    print("Current data: \(String(describing: document.data()))")
+                }
+            }
+        }
+        
         return true
     }
 
@@ -53,5 +70,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate
         })
         return container
     }()
+    
+
+    
 }
 
